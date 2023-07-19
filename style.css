@@ -1,0 +1,144 @@
+body {
+box-sizing: border-box;
+text-align: center; 
+background-color: navy;
+}
+
+.atm {
+border: 20px solid darkgrey;
+padding: 20px;
+/* background-color: rgb(23, 23, 154); */
+background-image: url('https://t3.ftcdn.net/jpg/04/48/58/86/360_F_448588686_zv4PkC62qZ7dUgQnmmmlMVI5qrHhPRfc.jpg');
+background-size: 1000px;
+width: 800px;
+margin: 0 auto; 
+}
+
+h1 {
+color: white;
+font-size: 30px;
+}
+
+.atmRows{
+/* border: solid blue; */
+margin-bottom: 10px;
+}
+
+.atmRow1, .atmRow2, .atmRow3, .atmRow4{
+/* border:solid black; */
+border-width:.2px;
+margin:0.1em;
+height:40px;
+display:flex;
+justify-content: center;
+}
+
+.key{
+border:solid black;
+border-width: 3px;
+width:12%;
+border-radius:10px;
+text-align:center;
+font-size:25px;
+color: white;
+background-color: lightgrey;
+}
+
+.key:hover{
+border:solid black;
+width:12%;
+border-radius: 10px;
+text-align:center;
+font-size:25px;
+background-color:gray;
+color:white;
+}
+
+.mainButton{
+display: flex;
+/* justify-content: space-between; */
+/* margin-left: 10px; */
+}
+
+button {
+border: 3px solid black;
+width: 120px;
+height: 70px;
+/* background-color: white; */
+background-image: url('https://t3.ftcdn.net/jpg/04/48/58/86/360_F_448588686_zv4PkC62qZ7dUgQnmmmlMVI5qrHhPRfc.jpg');
+color: navy;
+font-size: 18px;
+font-weight: bold;
+border-radius: 5px;
+cursor: pointer;
+margin-left: 80px;
+display: flex;
+justify-content: space-between;
+padding: 20px 20px;
+margin-bottom: 10px;
+}
+
+#subb {
+
+height: 50px;
+padding: 12px 25px;
+margin-left: 350px;
+background-color: lime;
+background-image: none;
+color: white;
+}
+
+#butt{
+background-color: yellow;
+}
+
+#clearbut{
+background-color: red;
+}
+
+#pin {
+padding: 10px;
+width: 200px;
+font-size: 18px;
+}
+
+#options {
+display: none;
+}
+
+#balance,
+#deposit,
+#withdraw{
+display: none;
+}
+
+#balance h3,
+#deposit input,
+#withdraw input{
+margin-bottom: 5px;
+}
+
+#balance h3 span {
+font-weight: bold;
+}
+
+#balance h3,
+#deposit button,
+#withdraw button {
+border: solid gray;
+padding: 10px 20px;
+background-color: rgb(17, 17, 218);
+color: black;
+border-radius: 5px;
+font-size: 26px;
+cursor: pointer;
+}
+
+#balance h3,
+#deposit input,
+#withdraw input,
+#transfer input,
+#deposit button,
+#withdraw button{
+width: 250px;
+}

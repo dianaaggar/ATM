@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="atm">
+    <h1>Welcome to the ATM ABC BANK</h1>
+    <div class="atmRows">
+        <div class="atmRow1"> 
+            <div class="key" onclick="uploadToPin('7')">7</div>
+            <div class="key" onclick="uploadToPin('8')">8</div>
+            <div class="key" onclick="uploadToPin('9')">9</div>
+            </div>
+            <div class="atmRow2"> 
+            <div class="key" onclick="uploadToPin('4')">4</div>
+            <div class="key" onclick="uploadToPin('5')">5</div>
+            <div class="key" onclick="uploadToPin('6')">6</div>
+            </div>
+            <div class="atmRow3"> 
+            <div class="key" onclick="uploadToPin('1')">1</div>
+            <div class="key" onclick="uploadToPin('2')">2</div>
+            <div class="key" onclick="uploadToPin('3')">3</div>
+            </div>    
+            <div class="atmRow4">
+            <div id="clearbut" class="key" onclick="clearPIN()">Clear</div>
+            <div class="key" onclick="uploadToPin('0')">0</div>
+            <div id="butt" class="key" onclick="uploadToPin('#')">#</div>
+        </div>
+    </div>
+
+            <input type="password" id="pin" placeholder="Enter your PIN">
+                
+            <button id="subb" onclick="checkPIN()">Submit</button>
+            
+            <div id="options" style="display:none;">
+            <div class="mainButton">
+                <button onclick="showBalance()">Balance Inquiry</button>
+                <button onclick="showDeposit()">Deposit</button>
+                <button onclick="showWithdraw()">Withdraw</button>
+                <button onclick="logout()">Logout</button>
+            </div>
+
+            <div id="balance" style="display:none;">
+                <h3>Your Balance: $<span id="amount">0</span></h3>
+            </div>
+            <div id="deposit" style="display:none;">
+                <input type="number" id="depositAmount" placeholder="Enter amount to deposit">
+                <button onclick="deposit()">Deposit</button>
+            </div>
+            <div id="withdraw" style="display:none;">
+                <input type="number" id="withdrawAmount" placeholder="Enter amount to withdraw">
+                <button onclick="withdraw()">Withdraw</button>
+            </div>
+        
+
+        </div>
+        </div>
+
+    <script src="app.js" async defer></script>
+
+    </body>
+    </html>
